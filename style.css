@@ -1,12 +1,111 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFE9E3;
+    align-items: center;
+    margin: 60px;
+    gap: 50px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    height: 600px;
-    width: 600px;
+    background-color: white;
+    height: 670px;
+    width: 670px;
+    border: 70px solid #D9CFC7;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(151, 131, 106, 0.5);
+}
+
+.tools {
+    width: 670px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9CFC7;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(151, 131, 106, 0.5);
+    color: #fff;
+}
+
+.select {
+    display: flex;
+    gap: 9px;
+}
+
+.select label {
+    align-self: center;
+}
+
+.select input{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.select button {
+    border: none;
+    background-color: #EFE9E3;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+.select button:hover {
+    background-color: rgb(151, 131, 106);
+    color: #fff;
+    cursor: pointer;
+}
+
+.tools button {
+    padding: 8px;
+    border: none;
+}
+
+.tools button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.green {
+    background-color: rgb(0, 255, 0);
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+.blue {
+    background-color: rgb(0, 255, 255);
+}
+
+.pink {
+    background-color: rgb(255, 0, 200);
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+}
+
+.orange {
+    background-color: rgb(255, 166, 0);
+}
+
+.brown {
+    background-color: rgb(172, 89, 11);
+}
+
+.purple {
+    background-color: rgb(225, 0, 255);
 }

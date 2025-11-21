@@ -1,4 +1,5 @@
 function createGrid(gridDimensions) {
+    let container = document.querySelector('.container');
     for(let i = 0; i < gridDimensions ; i++){
         let row = document.createElement('div');
         row.style.display = 'flex';
@@ -13,15 +14,5 @@ function createGrid(gridDimensions) {
         }
     }    
 }
-
-const container =  document.querySelector('.container');
-const button = document.querySelector('button');
-let numberOfSquares;
-button.addEventListener('click', () => {
-    numberOfSquares = prompt('Number of squares: ');    
-    container.innerHTML = '';
-    createGrid(numberOfSquares);    
-});
-
 
 
